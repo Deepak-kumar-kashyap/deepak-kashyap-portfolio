@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deepak Kumar Kashyap — Full Stack Developer</title>
+  <meta name="description" content="Full Stack Developer specializing in MERN stack, building scalable web apps and solving real-world problems.">
+  <link rel="stylesheet" href="style.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Devicons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+<body>
+
+  <!-- ======== PRELOADER ======== -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo"><img src="logo.png" alt="Logo" class="logo-img"></div>
+      <div class="preloader-bar"><div class="preloader-fill" id="preloader-fill"></div></div>
+      <div class="preloader-text" id="preloader-text">Initializing system...</div>
+    </div>
+  </div>
+
+  <!-- ======== CUSTOM CURSOR ======== -->
+
+
+  <!-- ======== NAVBAR ======== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo"><img src="logo.png" alt="Logo" class="logo-img"></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#freelance">Freelance</a></li>
+        <li><a href="#stats">Stats</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      
+      <a href="#contact" class="btn btn-outline nav-cta">Hire Me</a>
+      <a href="resume.pdf" download class="btn btn-primary">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======== MOBILE MENU ======== -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#freelance" class="mobile-link">Freelance</a></li>
+      <li><a href="#stats" class="mobile-link">Stats</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+      <a href="resume.pdf" download class="btn btn-primary">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+    </ul>
+  </div>
+
+  <!-- ======== HERO SECTION ======== -->
+  <section id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <!-- Ambient glow spots -->
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+
+    <div class="hero-content">
+      <!-- LEFT: Text -->
+      <div class="hero-left">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>Available for opportunities</span>
+        </div>
+        <h1 class="hero-name">
+          <span class="name-line line-overflow"><span class="line-inner">Deepak</span></span>
+          <span class="name-line line-overflow"><span class="line-inner">Kumar <span class="accent">Kashyap</span></span></span>
+        </h1>
+        <div class="hero-role">
+          <span class="role-prefix">I build </span>
+          <span class="dynamic-text" id="dynamic-text"></span><span class="type-cursor">|</span>
+        </div>
+        <p class="hero-tagline">Building scalable web apps and solving real-world problems — one commit at a time.</p>
+        <div class="hero-actions">
+          <a href="resume.pdf" download class="btn btn-primary">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+          <a href="#projects" class="btn btn-ghost">
+            <i class="fas fa-rocket"></i> View Projects
+          </a>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com/Deepak-kumar-kashyap" target="_blank" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/deepak-kashyap-lpu2027" target="_blank" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:deepakkashyapcse2027@gmail.com" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://leetcode.com/u/deepakkumarkashyap78557" target="_blank" class="social-icon" title="LeetCode">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT: Photo -->
+      <div class="hero-right">
+        <div class="photo-wrapper">
+          <div class="photo-ring ring-outer"></div>
+          <div class="photo-ring ring-mid"></div>
+          <div class="photo-ring ring-inner"></div>
+          <div class="photo-container">
+            <img src="photo.jpg" alt="Deepak Kumar Kashyap" class="profile-photo" id="profile-photo">
+            <div class="photo-initials" id="photo-fallback">DK</div>
+          </div>
+          <div class="photo-glow"></div>
+          <!-- Orbit dots -->
+          <div class="orbit-dot orbit-dot-1"></div>
+          <div class="orbit-dot orbit-dot-2"></div>
+          <div class="orbit-dot orbit-dot-3"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-line-wrap"><div class="scroll-line"></div></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- ======== ABOUT SECTION ======== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 — About</span>
+        <h2 class="section-title">The Story Behind<br>the Code</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p class="about-lead">"From curiosity to code — I build things that actually work in the real world."</p>
+          <p>I'm <strong>Deepak Kumar Kashyap</strong>, a passionate full-stack developer who started with a simple question: <em>How do websites actually work?</em> That question led me down a rabbit hole of HTML, CSS, and JavaScript — and I never looked back.</p>
+          <p>During my academic journey, I dove deep into the <strong>MERN stack</strong> and <strong>Data Structures & Algorithms</strong>, solving 110+ LeetCode problems while simultaneously building real applications that solve real problems. I believe the best developers don't just write code — they think in systems.</p>
+          <p>My internship at <strong>VanillaKart</strong> gave me my first taste of production work — shipping WordPress sites, optimizing performance, and understanding what it means to deliver for a client under real constraints.</p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number" data-count="110">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">LeetCode Solved</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="5">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="2">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Happy Clients</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-right reveal-right" style="--delay:0.2s">
+          <div class="about-card">
+            <div class="card-header">
+              <span class="card-title">My Journey</span>
+              <div class="card-dots"></div>
+            </div>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4 class="timeline-title">Full Stack Developer</h4>
+                  <p class="timeline-subtitle">Freelance & Personal Projects</p>
+                  <p class="timeline-desc">Building end-to-end applications using MERN stack — from database design to UI implementation. Currently working on 3+ projects including an e-commerce platform and a productivity tool.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4 class="timeline-title">Internship</h4>
+                  <p class="timeline-subtitle">VanillaKart — September 2025 – November 2025</p>
+                  <p class="timeline-desc">Shipped WordPress websites for clients, optimized performance, implemented custom features, and learned production workflows in a fast-paced environment.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4 class="timeline-title">B.Tech in Computer Science</h4>
+                  <p class="timeline-subtitle">Lovely Professional University — 2023 – 2027</p>
+                  <p class="timeline-desc">Specializing in full-stack development, data structures, algorithms, and modern web technologies. Active in hackathons and coding competitions.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SKILLS SECTION ======== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 — Skills</span>
+        <h2 class="section-title">Tech Stack &amp;<br>Expertise</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category reveal-up" style="--delay:0s">
+          <h3 class="category-title"><i class="fas fa-code"></i> Languages</h3>
+          <div class="skill-items">
+            <div class="skill-chip"><i class="devicon-javascript-plain colored"></i> JavaScript</div>
+            <div class="skill-chip"><i class="devicon-python-plain colored"></i> Python</div>
+            <div class="skill-chip"><i class="devicon-java-plain colored"></i> Java</div>
+            <div class="skill-chip"><i class="devicon-cplusplus-plain colored"></i> C++</div>
+            <div class="skill-chip"><i class="devicon-html5-plain colored"></i> HTML5</div>
+            <div class="skill-chip"><i class="devicon-css3-plain colored"></i> CSS3</div>
+          </div>
+        </div>
+        <div class="skill-category reveal-up" style="--delay:0.1s">
+          <h3 class="category-title"><i class="fas fa-layer-group"></i> Frameworks</h3>
+          <div class="skill-items">
+            <div class="skill-chip"><i class="devicon-react-original colored"></i> React.js</div>
+            <div class="skill-chip"><i class="devicon-nodejs-plain colored"></i> Node.js</div>
+            <div class="skill-chip"><i class="devicon-express-original"></i> Express.js</div>
+            <div class="skill-chip"><i class="devicon-wordpress-plain colored"></i> WordPress</div>
+            <div class="skill-chip"><i class="devicon-tailwindcss-plain colored"></i> Tailwind</div>
+          </div>
+        </div>
+        <div class="skill-category reveal-up" style="--delay:0.2s">
+          <h3 class="category-title"><i class="fas fa-database"></i> Databases</h3>
+          <div class="skill-items">
+            <div class="skill-chip"><i class="devicon-mongodb-plain colored"></i> MongoDB</div>
+            <div class="skill-chip"><i class="devicon-mysql-plain colored"></i> MySQL</div>
+          </div>
+        </div>
+        <div class="skill-category reveal-up" style="--delay:0.3s">
+          <h3 class="category-title"><i class="fas fa-tools"></i> Tools</h3>
+          <div class="skill-items">
+            <div class="skill-chip"><i class="devicon-git-plain colored"></i> Git</div>
+            <div class="skill-chip"><i class="devicon-github-original"></i> GitHub</div>
+            <div class="skill-chip"><i class="devicon-vscode-plain colored"></i> VS Code</div>
+            <div class="skill-chip"><i class="devicon-figma-plain colored"></i> Figma</div>
+            <div class="skill-chip"><i class="devicon-postman-plain colored"></i> Postman</div>
+          </div>
+        </div>
+        <div class="skill-category reveal-up" style="--delay:0.4s">
+          <h3 class="category-title"><i class="fas fa-brain"></i> Core CS</h3>
+          <div class="skill-items">
+            <div class="skill-chip"><i class="fas fa-sitemap"></i> DSA</div>
+            <div class="skill-chip"><i class="fas fa-microchip"></i> OS</div>
+            <div class="skill-chip"><i class="fas fa-table"></i> DBMS</div>
+            <div class="skill-chip"><i class="fas fa-network-wired"></i> Networks</div>
+            <div class="skill-chip"><i class="fas fa-object-group"></i> OOP</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== EXPERIENCE SECTION ======== -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 — Experience</span>
+        <h2 class="section-title">Work Experience</h2>
+      </div>
+      <div class="exp-timeline">
+        <div class="exp-item reveal-up">
+          <div class="exp-marker">
+            <div class="exp-dot-outer"><div class="exp-dot-inner"></div></div>
+            <div class="exp-connector"></div>
+          </div>
+          <div class="exp-card glass-card exp-card-horizontal">
+            <div class="exp-card-certificate">
+              <img src="Vanillakart.png" alt="Internship Certificate">
+            </div>
+            <div class="exp-card-content">
+              <div class="exp-header">
+                <div class="exp-info">
+                  <div>
+                    <h3>WordPress Developer Intern</h3>
+                    <span class="exp-company">VanillaKart</span>
+                  </div>
+                </div>
+                <div class="exp-meta">
+                  <span class="exp-duration"><i class="fas fa-calendar-alt"></i> 2025</span>
+                  <span class="exp-badge">Internship</span>
+                </div>
+              </div>
+              <ul class="exp-points">
+                <li><span class="check-icon"><i class="fas fa-check"></i></span> Developed and customized WordPress websites using Elementor page builder and custom CSS/JS</li>
+                <li><span class="check-icon"><i class="fas fa-check"></i></span> Implemented SEO best practices — improved Google PageSpeed score from 48 to 82 (+40% performance)</li>
+                <li><span class="check-icon"><i class="fas fa-check"></i></span> Integrated third-party plugins for advanced site functionality</li>
+                <li><span class="check-icon"><i class="fas fa-check"></i></span> Performed optimization using caching, image compression (WebP), and lazy loading strategies</li>
+              </ul>
+              <div class="exp-tech-row">
+                <span>WordPress</span><span>Elementor</span><span>PHP</span><span>SEO</span><span>CSS3</span><span>Performance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== PROJECTS SECTION ======== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 — Projects</span>
+        <h2 class="section-title">Featured Work</h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card glass-card reveal-up" style="--delay:0s">
+          <div class="project-glow"></div>
+          <div class="project-img-wrap">
+            <img src="RepoLense.png" alt="RepoLense Screenshot" class="project-img">
+          </div>
+          <div class="project-header">
+            <div class="project-icon-wrap">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://repo-lense.vercel.app" target="_blank" class="project-btn" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/Deepak-kumar-kashyap/RepoLense" target="_blank" class="project-btn" title="Source Code"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>RepoLense – Full Stack GitHub Repository Analyzer</h3>
+            <p class="project-tag">March 2026</p>
+            <ul class="project-desc-list">
+              <li>Developed a full-stack web application using React and Node.js to analyze GitHub repositories, providing structured insights such as repository details, stars, forks, and issues.</li>
+              <li>Integrated GitHub REST APIs to fetch and display repository metadata and technology stack, ensuring accurate and real-time data visualization.</li>
+              <li>Designed a responsive and performance-optimized UI, focusing on smooth rendering, clean layout, and improved user experience.</li>
+              <li>Implemented efficient API handling and asynchronous data fetching, reducing unnecessary re-renders and improving frontend performance.</li>
+              <li>Deployed the application using Vercel (frontend) and Render (backend), ensuring reliable hosting and production-level performance.</li>
+            </ul>
+          </div>
+          <div class="project-tech">
+            <span>React.js</span><span>Node.js</span><span>Express.js</span><span>GitHub REST API</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>Vercel</span><span>Render</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass-card reveal-up" style="--delay:0.15s">
+          <div class="project-glow"></div>
+          <div class="project-img-wrap">
+            <img src="Airbnb.png" alt="Airbnb Clone Screenshot" class="project-img">
+          </div>
+          <div class="project-header">
+            <div class="project-icon-wrap">
+              <i class="fas fa-home"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Deepak-kumar-kashyap/airbnb_clone" target="_blank" class="project-btn" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/Deepak-kumar-kashyap/airbnb_clone" target="_blank" class="project-btn" title="Source Code"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Airbnb Clone – Full Stack Web Application</h3>
+            <p class="project-tag">November 2025</p>
+            <ul class="project-desc-list">
+              <li>Built a full Airbnb-style platform with property listings, search filters, user dashboards, and secure login/signup using React and Tailwind CSS.</li>
+              <li>Created backend APIs with Node.js and Express, handling authentication, bookings, and property management.</li>
+              <li>Integrated MongoDB for data storage and Cloudinary for fast, secure image uploads and media management.</li>
+            </ul>
+          </div>
+          <div class="project-tech">
+            <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Cloudinary</span><span>Tailwind CSS</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card glass-card reveal-up" style="--delay:0.3s">
+          <div class="project-glow"></div>
+          <div class="project-img-wrap">
+            <img src="image-converter-tool.png" alt="Image Converter Tool Screenshot" class="project-img">
+          </div>
+          <div class="project-header">
+            <div class="project-icon-wrap">
+              <i class="fas fa-image"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://free-image-converter1.web.app" target="_blank" class="project-btn" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://free-image-converter1.web.app" target="_blank" class="project-btn" title="Source Code"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Free Online Image Converter Tool</h3>
+            <p class="project-tag">March 2025</p>
+            <ul class="project-desc-list">
+              <li>Developed a fully responsive online image conversion tool supporting 6+ formats with client-side processing, reducing server dependency by 100%.</li>
+              <li>Built a smooth drag-and-drop interface using HTML, CSS, JavaScript, and implemented real-time image preview and client-side conversion using Canvas API for fast processing.</li>
+              <li>Applied SEO-optimized metadata (Open Graph, Twitter Cards, Schema.org) to improve visibility, indexing, and sharing across social platforms.</li>
+              <li>Designed a clean, modern UI with gradient backgrounds, blur effects, responsive layout, and optimized loading for all devices to enhance user experience.</li>
+            </ul>
+          </div>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Canvas API</span><span>SEO (Open Graph, Twitter Card, Schema.org)</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FREELANCE SECTION ======== -->
+  <section id="freelance" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05 — Freelance</span>
+        <h2 class="section-title">Client Work</h2>
+        <p class="section-subtitle">Real problems. Real solutions. Measurable results.</p>
+      </div>
+      <div class="freelance-grid">
+
+        <!-- Freelance 1 -->
+        <div class="freelance-card glass-card reveal-up" style="--delay:0s">
+          <div class="project-img-wrap">
+            <img src="pos_billing.png" alt="Billing Software Screenshot" class="project-img">
+          </div>
+          <div class="fl-top">
+            <div class="fl-icon"><i class="fas fa-cash-register"></i></div>
+            <span class="fl-badge">Client Project</span>
+          </div>
+          <h3 class="fl-title">Billing Software for Restaurant</h3>
+          <div class="psr-flow">
+            <div class="psr-item psr-problem">
+              <div class="psr-label"><i class="fas fa-exclamation-triangle"></i> Problem</div>
+              <p>Restaurant managed bills manually with paper receipts — prone to errors, slow during peak hours, no revenue tracking.</p>
+            </div>
+            <div class="psr-connector"><i class="fas fa-arrow-down"></i></div>
+            <div class="psr-item psr-solution">
+              <div class="psr-label"><i class="fas fa-lightbulb"></i> Solution</div>
+              <p>Built a desktop-ready billing app with item management, auto-calculated GST, printable invoices, and a daily sales dashboard.</p>
+            </div>
+            <div class="psr-connector"><i class="fas fa-arrow-down"></i></div>
+            <div class="psr-item psr-result">
+              <div class="psr-label"><i class="fas fa-chart-line"></i> Result</div>
+              <p>Billing time reduced by <strong>60%</strong>. Zero calculation errors. Owner tracks weekly revenue in real-time.</p>
+            </div>
+          </div>
+          <div class="fl-tech">
+            <span>JavaScript</span><span>HTML/CSS</span><span>LocalStorage</span><span>Print API</span>
+          </div>
+        </div>
+
+        <!-- Freelance 2 -->
+        <div class="freelance-card glass-card reveal-up" style="--delay:0.2s">
+          <div class="project-img-wrap">
+            <img src="rainbow_banquet.png" alt="Banquet Hall Website Screenshot" class="project-img">
+          </div>
+          <div class="fl-top">
+            <div class="fl-icon"><i class="fas fa-building"></i></div>
+            <span class="fl-badge">Client Project</span>
+          </div>
+          <h3 class="fl-title">Website for Banquet Hall</h3>
+          <div class="psr-flow">
+            <div class="psr-item psr-problem">
+              <div class="psr-label"><i class="fas fa-exclamation-triangle"></i> Problem</div>
+              <p>The banquet hall had zero online presence — losing bookings to competitors who had websites and appeared on Google.</p>
+            </div>
+            <div class="psr-connector"><i class="fas fa-arrow-down"></i></div>
+            <div class="psr-item psr-solution">
+              <div class="psr-label"><i class="fas fa-lightbulb"></i> Solution</div>
+              <p>Designed a fully responsive website with gallery, packages, amenities page, and inquiry form with email notifications.</p>
+            </div>
+            <div class="psr-connector"><i class="fas fa-arrow-down"></i></div>
+            <div class="psr-item psr-result">
+              <div class="psr-label"><i class="fas fa-chart-line"></i> Result</div>
+              <p>Went from <strong>0 to 200+ monthly visitors</strong> within 2 months. First online booking arrived within the first week.</p>
+            </div>
+          </div>
+          <div class="fl-tech">
+            <span>WordPress</span><span>Elementor</span><span>SEO</span><span>WPForms</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== STATS SECTION ======== -->
+  <section id="stats" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">06 — Stats</span>
+        <h2 class="section-title">By the Numbers</h2>
+      </div>
+      <div class="stats-grid">
+
+        <!-- GitHub Stats -->
+        <div class="stats-panel glass-card reveal-up" style="--delay:0s">
+          <div class="stats-panel-head">
+            <div class="stats-panel-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <h3>GitHub Activity</h3>
+              <span class="stats-source-badge" id="gh-badge">Loading...</span>
+            </div>
+          </div>
+          <div id="github-stats-container">
+            <div class="stat-loading">
+              <div class="loading-ring"></div>
+              <span>Fetching GitHub data...</span>
+            </div>
+          </div>
+          <img id="github-streak-img" src="" alt="GitHub Streak" style="display:none">
+        </div>
+
+        <!-- LeetCode Stats -->
+        <div class="stats-panel glass-card reveal-up" style="--delay:0.2s">
+          <div class="stats-panel-head">
+            <div class="stats-panel-icon lc-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+            </div>
+            <div>
+              <h3>LeetCode Progress</h3>
+              <span class="stats-source-badge" id="lc-badge">Loading...</span>
+            </div>
+          </div>
+          <div id="leetcode-stats-container">
+            <div class="stat-loading">
+              <div class="loading-ring"></div>
+              <span>Fetching LeetCode data...</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CERTIFICATIONS ======== -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">07 — Achievements</span>
+        <h2 class="section-title">Certifications &amp;<br>Badges</h2>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card glass-card reveal-up" style="--delay:0s">
+          <div class="cert-icon-wrap cert-icon-img"><img src="generative_ai.png" alt="Generative AI Certificate"></div>
+          <div class="cert-info">
+            <h4>Generative AI</h4>
+            <span class="cert-org">Infosys Springboard</span>
+            <span class="cert-pill">Certified</span>
+          </div>
+        </div>
+        <div class="cert-card glass-card reveal-up" style="--delay:0.1s">
+          <div class="cert-icon-wrap cert-icon-img"><img src="MERN.png" alt="MERN with Gen AI Certificate"></div>
+          <div class="cert-info">
+            <h4>MERN With Gen AI</h4>
+            <span class="cert-org">Summer Training</span>
+            <span class="cert-pill">Certified</span>
+          </div>
+        </div>
+        <div class="cert-card glass-card reveal-up" style="--delay:0.2s">
+          <div class="cert-icon-wrap cert-icon-img"><img src="cloud_computing.png" alt="Cloud Computing Certificate"></div>
+          <div class="cert-info">
+            <h4>Cloud Computing</h4>
+            <span class="cert-org">NPTEL</span>
+            <span class="cert-pill">Certified</span>
+          </div>
+        </div>
+        <div class="cert-card glass-card reveal-up" style="--delay:0.3s">
+          <div class="cert-icon-wrap cert-icon-img"><img src="leetcode_50days_badge.png" alt="LeetCode 50 Days Badge"></div>
+          <div class="cert-info">
+            <h4>50 Days Badge</h4>
+            <span class="cert-org">LeetCode</span>
+            <span class="cert-pill">Achieved</span>
+          </div>
+        </div>
+        <div class="cert-card glass-card reveal-up" style="--delay:0.4s">
+          <div class="cert-icon-wrap cert-icon-img"><img src="python(basic).png" alt="Python Basic Certificate"></div>
+          <div class="cert-info">
+            <h4>Python(Basic)</h4>
+            <span class="cert-org">HackerRank</span>
+            <span class="cert-pill">Certified</span>
+          </div>
+        </div>
+        <div class="cert-card glass-card reveal-up" style="--delay:0.5s">
+          <div class="cert-icon-wrap cert-icon-img"><img src="Vanillakart.png" alt="Internship Certificate"></div>
+          <div class="cert-info">
+            <h4>Web Dev Internship</h4>
+            <span class="cert-org">VanillaKart</span>
+            <span class="cert-pill">Certified</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CONTACT SECTION ======== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">08 — Contact</span>
+        <h2 class="section-title">Let's Build<br>Something</h2>
+        <p class="section-subtitle">Open to full-time roles, freelance projects &amp; collaborations.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-left reveal-left">
+          <p class="contact-intro">Whether you have a project in mind, a job opportunity, or just want to say hello — my inbox is always open.</p>
+          <div class="contact-items">
+            <a href="mailto:deepakkashyapcse2027@gmail.com" class="contact-row">
+              <div class="contact-row-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-row-label">Email</span>
+              </div>
+              <i class="fas fa-arrow-right contact-row-arrow"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/deepak-kashyap-lpu2027" target="_blank" class="contact-row">
+              <div class="contact-row-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <span class="contact-row-label">LinkedIn</span>
+              </div>
+              <i class="fas fa-arrow-right contact-row-arrow"></i>
+            </a>
+            <a href="https://github.com/Deepak-kumar-kashyap" target="_blank" class="contact-row">
+              <div class="contact-row-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <span class="contact-row-label">GitHub</span>
+              </div>
+              <i class="fas fa-arrow-right contact-row-arrow"></i>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right reveal-right">
+          <form class="contact-form glass-card" id="contact-form">
+            <div class="form-row">
+              <div class="form-field">
+                <input type="text" id="f-name" name="name" placeholder=" " required>
+                <label for="f-name">Your Name</label>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <input type="email" id="f-email" name="email" placeholder=" " required>
+                <label for="f-email">Email Address</label>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <textarea id="f-msg" name="message" rows="5" placeholder=" " required></textarea>
+                <label for="f-msg">Your Message</label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="send-btn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#hero" class="footer-logo"><img src="logo.png" alt="Logo" class="logo-img"></a>
+        <p class="footer-copy">Designed &amp; Built by <span>Deepak Kumar Kashyap</span></p>
+        <p class="footer-year">© 2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast-container" class="toast-container"></div>
+  
+  <!-- ======== SCRIPTS ======== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
