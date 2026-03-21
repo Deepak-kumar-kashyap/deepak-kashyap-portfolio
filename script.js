@@ -10,6 +10,14 @@ const CONFIG = {
   cacheLife: 24 * 60 * 60 * 1000,       // 24h in ms
 };
 
+/* ── THEME INITIALIZATION (Prevent Flash) ── */
+(function() {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'light') {
+    document.body.classList.add('light-theme');
+  }
+})();
+
 /* ============================================================
    PRELOADER
    ============================================================ */
@@ -318,6 +326,32 @@ function initActiveNav() {
   }, { threshold: 0.4 });
 
   sections.forEach(s => io.observe(s));
+}
+
+
+/* ============================================================
+   THEME TOGGLE
+   ============================================================ */
+function initTheme() {
+  const toggleBtn = document.getElementById('theme-toggle');
+  const toggleBtnMobile = document.getElementById('theme-toggle-mobile');
+  
+  function toggleTheme() {
+    const isLight = document.body.classList.toggle('light-theme');
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    
+    // Optional: add a little pop animation to the icon
+    const icons = document.querySelectorAll('.theme-toggle i');
+    anime({
+      targets: icons,
+      scale: [1, 1.2, 1],
+      duration: 400,
+      easing: 'easeOutBack'
+    });
+  }
+
+  if (toggleBtn) toggleBtn.addEventListener('click', toggleTheme);
+  if (toggleBtnMobile) toggleBtnMobile.addEventListener('click', toggleTheme);
 }
 
 
@@ -721,6 +755,7 @@ function initTilt() {
 function initAll() {
   initNavbar();
   initMobileMenu();
+  initTheme();
   initThreeJS();
   initTyping();
   initScrollReveal();
