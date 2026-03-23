@@ -1,26 +1,19 @@
-/* ============================================================
-   DEEPAK KUMAR KASHYAP — PORTFOLIO SCRIPT
-   Three.js · Anime.js · Intersection Observer · API Layer
-   ============================================================ */
-
-/* ── CONFIG (⚠️ UPDATE THESE WITH YOUR REAL USERNAMES) ── */
+//config
 const CONFIG = {
-  githubUsername: 'Deepak-kumar-kashyap',    // ← Change this
-  leetcodeUsername: 'deepakkumarkashyap78557',  // ← Change this
-  cacheLife: 24 * 60 * 60 * 1000,       // 24h in ms
+  githubUsername: 'Deepak-kumar-kashyap',
+  leetcodeUsername: 'deepakkumarkashyap78557',
+  cacheLife: 5 * 24 * 60 * 60 * 1000,
 };
 
-/* ── THEME INITIALIZATION (Prevent Flash) ── */
-(function() {
+//theme
+(function () {
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme === 'light') {
     document.body.classList.add('light-theme');
   }
 })();
 
-/* ============================================================
-   PRELOADER
-   ============================================================ */
+//preloader
 const preloader = document.getElementById('preloader');
 const preloaderText = document.getElementById('preloader-text');
 
@@ -44,7 +37,7 @@ window.addEventListener('load', () => {
     document.body.style.overflow = '';
     // Kick off all init functions after preloader fades
     initAll();
-    
+
     // Celebration confetti!
     if (typeof confetti === 'function') {
       setTimeout(fireConfetti, 400);
@@ -335,11 +328,11 @@ function initActiveNav() {
 function initTheme() {
   const toggleBtn = document.getElementById('theme-toggle');
   const toggleBtnMobile = document.getElementById('theme-toggle-mobile');
-  
+
   function toggleTheme() {
     const isLight = document.body.classList.toggle('light-theme');
     localStorage.setItem('theme', isLight ? 'light' : 'dark');
-    
+
     // Optional: add a little pop animation to the icon
     const icons = document.querySelectorAll('.theme-toggle i');
     anime({
@@ -469,26 +462,26 @@ function showToast(message, type = 'success') {
   const container = document.getElementById('toast-container');
   const toast = document.createElement('div');
   toast.className = `toast toast-${type}`;
-  
+
   const icon = type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle';
-  
+
   toast.innerHTML = `
     <i class="fas ${icon}"></i>
     <div class="toast-msg">${message}</div>
   `;
-  
+
   container.appendChild(toast);
-  
+
   // Animate in
   setTimeout(() => toast.classList.add('toast-show'), 100);
-  
+
   // Animate out
   const hide = () => {
     toast.classList.remove('toast-show');
     toast.classList.add('toast-hide');
     setTimeout(() => toast.remove(), 500);
   };
-  
+
   setTimeout(hide, 4000);
   toast.onclick = hide;
 }

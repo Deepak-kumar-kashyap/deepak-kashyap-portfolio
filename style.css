@@ -28,7 +28,7 @@
   --radius:        12px;
   --radius-lg:     18px;
   --radius-xl:     24px;
-  --font-head:     'Syne', sans-serif;
+  --font-head:     'Poppins', sans-serif;
   --font-mono:     'JetBrains Mono', monospace;
   --font-body:     'DM Sans', sans-serif;
   --nav-h:         68px;
@@ -46,7 +46,7 @@ body.light-theme {
   --border-glow:   rgba(0,119,182,0.22);
   --text-1:        #111827;
   --text-2:        #4b5563;
-  --text-3:        #6b7280;
+  --text-3:        #b8bec9;
   --accent:        #0077b6;
   --accent-10:     rgba(0,119,182,0.08);
   --accent-20:     rgba(0,119,182,0.15);
